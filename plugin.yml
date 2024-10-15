@@ -1,0 +1,29 @@
+plugin:
+  id: sdr6g5v1e56wtb156ert1bwer54f498w
+  displayname: Hello World Plugin
+  description: This is a sample hello world plugin.
+  version: 0.0.1
+  icon:
+    name: fa-solid fa-globe
+    color: blue
+  git_repo:
+    url: https://github.com/Torrent007/helloworld-plugin.git
+    branch: master
+  documentation: https://github.com/Torrent007/helloworld-plugin/blob/master/README.md
+  author: Fabien EGRET
+  contributors: []
+  roles:
+    - name: Full Control
+      description: Complete control over the plugin
+      ldap_group: LDAP_FAKE_GROUP_FULLCONTROL
+    - name: Users
+      description: Minimal access to the plugin.
+      ldap_group: LDAP_FAKE_GROUP_USERS
+
+frontend: 
+  root_url: hello-world
+  title: Hello World
+  sidebar:
+    - title: Hello World
+      link: /sample
+      icon: fa-solid fa-globe
