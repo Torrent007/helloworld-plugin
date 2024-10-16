@@ -1,3 +1,3 @@
 # helloworld-plugin
 
-v2
+v3
