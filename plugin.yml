@@ -1,5 +1,5 @@
 plugin:
-  id: sdr6g5v1e56wtb156ert1bwer54f498w
+  id: helloworldplugin
   displayname: Hello World Plugin
   description: This is a sample hello world plugin.
   version: 0.0.2
