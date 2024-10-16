@@ -2,7 +2,7 @@ plugin:
   id: sdr6g5v1e56wtb156ert1bwer54f498w
   displayname: Hello World Plugin
   description: This is a sample hello world plugin.
-  version: 0.0.1
+  version: 0.0.2
   icon:
     name: fa-solid fa-globe
     color: blue
