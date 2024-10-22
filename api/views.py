@@ -5,6 +5,6 @@ from .models import Task
 from .serializers import TaskSerializer
 
 
-class TaskView(models.ModelViewSet):
+class TaskView(viewsets.ModelViewSet):
     queryset = Task.objects.all()
     serializer_class = TaskSerializer
