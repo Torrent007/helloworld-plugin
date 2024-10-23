@@ -2,7 +2,7 @@ plugin:
   id: helloworldplugin
   displayname: Hello World Plugin
   description: This is a sample hello world plugin.
-  version: 0.0.3
+  version: 0.0.4
   icon:
     name: fa-solid fa-globe
     color: blue
@@ -19,6 +19,9 @@ plugin:
     - name: Users
       description: Minimal access to the plugin.
       ldap_group: LDAP_FAKE_GROUP_USERS
+
+api:
+  root_url: hello-world
 
 frontend: 
   root_url: hello-world
