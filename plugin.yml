@@ -2,7 +2,7 @@ plugin:
   id: helloworldplugin
   displayname: Hello World Plugin
   description: This is a sample hello world plugin.
-  version: 0.0.4
+  version: 0.0.5
   icon:
     name: fa-solid fa-globe
     color: blue
@@ -19,6 +19,12 @@ plugin:
     - name: Users
       description: Minimal access to the plugin.
       ldap_group: LDAP_FAKE_GROUP_USERS
+    - name: Read Only
+      description: Read only access to the plugin.
+      ldap_group: LDAP_FAKE_GROUP_READONLY
+    - name: Partial Control
+      description: Partial control over the plugin.
+      ldap_group: LDAP_FAKE_GROUP_PARTIALCONTROL
 
 api:
   root_url: hello-world
@@ -26,7 +32,15 @@ api:
 frontend: 
   root_url: hello-world
   title: Hello World
+  icon: ki-filled ki-like
   sidebar:
-    - title: Hello World
-      link: /sample
-      icon: fa-solid fa-globe
+    - title: Single item
+      link: /single-item
+      icon: 
+    - title: Multiple items
+      icon: 
+      items:
+        - title: Item 1
+          link: /item1
+        - title: Item 2
+          link: /item2
